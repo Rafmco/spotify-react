@@ -28,6 +28,7 @@
 .sidebar nav ul {
   margin-top: 20px;
   padding: 0 20px 10px 20px;
+  list-style-type: none; /* Remover "bullets" */
 }
 
 .sidebar ul li {
@@ -39,6 +40,11 @@
   text-decoration: none;
   font-weight: 600;
   font-size: 14px;
+}
+
+.sidebar nav ul li .fa {
+  font-size: 15px;
+  margin-right: 10px;
 }
 
 .library {
@@ -84,7 +90,7 @@
 }
 
 .library .library__content .fa-plus {
-  margin: 24px 10px;
+  margin: 10px 10px;
 }
 
 .section-playlist {
@@ -165,4 +171,9 @@
   margin:8px;
   padding:8px;
   border-radius:20px;
+}
+
+.languages .languages__button .fa {
+  font-size: 15px;
+  margin-right: 10px;
 }

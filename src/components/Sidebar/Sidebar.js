@@ -1,62 +1,75 @@
-import React from "react";
 import './Sidebar.css';
 
-import logo from '../../assets/icons/logo-spotify.png'
+import logoSpotify from '../../assets/icons/logo-spotify.png'
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBook, faHome, faSearch, faGlobe, faPlus } from '@fortawesome/free-solid-svg-icons';
 
 const Sidebar = () => {
   return (
 
-    <div class="sidebar">
-      <nav class="sidebar__navigation">
-        <div class="logo">
+    <div className="sidebar">
+      <nav className="sidebar__navigation">
+        <div className="logo">
           <a href="http://localhost:3000">
-            <img src={logo} alt="logo do Spotify" />
+            <img src={logoSpotify} alt="logo do Spotify" />
           </a>
         </div>
         <ul>
           <li>
             <a href="http://localhost:3000">
-              <span class="fa fa-home"></span>
+              <span className="fa">
+                <FontAwesomeIcon icon={faHome} />
+              </span>
               <span>Início</span>
             </a>
           </li>
           <li>
             <a href="http://localhost:3000">
-              <span class="fa fa-search"></span>
+              <span className="fa">
+                <FontAwesomeIcon icon={faSearch} />
+              </span>
               <span>Buscar</span>
             </a>
           </li>
         </ul>
       </nav>
 
-      <div class="library">
-        <div class="library__content">
-          <button class="library__button">
-            <span class="fa fas fa-book"></span>
+      <div className="library">
+        <div className="library__content">
+          <button className="library__button">
+            <span className="fa">
+              <FontAwesomeIcon icon={faBook} />
+            </span>
             <span>Sua biblioteca</span>
           </button>
-          <span class="fa fa-plus"></span>
+
+          <span className="fa-plus">
+            <FontAwesomeIcon icon={faPlus} />
+          </span>
         </div>
 
-        <section class="section-playlist">
-          <div class="section-playlist__content">
-            <span class="text title">Crie sua primeira playlist</span>
-            <span class="text subtitle">É fácil, vamos te ajudar.</span>
-            <button class="section-playlist__button">
+        <section className="section-playlist">
+          <div className="section-playlist__content">
+            <span className="text title">Crie sua primeira playlist</span>
+            <span className="text subtitle">É fácil, vamos te ajudar.</span>
+            <button className="section-playlist__button">
               <span>Criar playlist</span>
             </button>
           </div>
         </section>
 
-        <div class="cookies">
+        <div className="cookies">
           <a href="http://localhost:3000">
             Cookies
           </a>
         </div>
 
-        <div class="languages">
-          <button class="languages__button">
-            <span class="fa fa-globe"></span>
+        <div className="languages">
+          <button className="languages__button">
+            <span className="fa">
+              <FontAwesomeIcon icon={faGlobe} />
+            </span>
             <span>Português do Brasil</span>
           </button>
         </div>
