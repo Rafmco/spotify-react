@@ -1,6 +1,7 @@
 import './Layout.css';
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
+import Main from '../Main/Main';
 import Sidebar from '../Sidebar/Sidebar';
 
 const Layout = () => {
@@ -13,6 +14,8 @@ const Layout = () => {
       <main>
         <div class="main-container">
           <Header />
+
+          <Main />
         </div>
       </main>
 
