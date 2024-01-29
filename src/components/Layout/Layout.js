@@ -6,21 +6,19 @@ import Sidebar from '../Sidebar/Sidebar';
 
 const Layout = () => {
   return <>
-    <body>
-      <div class="sidebar-container">
-        <Sidebar />
+    <div className="sidebar-container">
+      <Sidebar />
+    </div>
+
+    <main>
+      <div className="main-container">
+        <Header />
+
+        <Main />
       </div>
+    </main>
 
-      <main>
-        <div class="main-container">
-          <Header />
-
-          <Main />
-        </div>
-      </main>
-
-      <Footer />
-    </body>
+    <Footer />
   </>
 }
 

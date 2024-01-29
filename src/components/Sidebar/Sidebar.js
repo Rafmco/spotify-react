@@ -1,9 +1,9 @@
 import './Sidebar.css';
 
-import logoSpotify from '../../assets/icons/logo-spotify.png'
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBook, faHome, faSearch, faGlobe, faPlus } from '@fortawesome/free-solid-svg-icons';
+
+import logoSpotify from '../../assets/icons/logo-spotify.png'
 
 const Sidebar = () => {
   return (

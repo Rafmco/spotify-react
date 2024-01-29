@@ -1,5 +1,8 @@
 import './Main.css';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlay } from '@fortawesome/free-solid-svg-icons';
+
 import Playlist1 from '../../assets/playlist/1.jpeg';
 import Playlist2 from '../../assets/playlist/2.png';
 import Playlist3 from '../../assets/playlist/3.jpeg';
@@ -159,7 +162,9 @@ const Main = () => {
             <div className="card-img">
               <img id="artist-img" className="artist-img" alt="" />
               <div className="play">
-                <span className="fa fa-solid fa-play" />
+                <span className="fa-play">
+                  <FontAwesomeIcon icon={faPlay} />
+                </span>
               </div>
             </div>
             <div className="card-text">
